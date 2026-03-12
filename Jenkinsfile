@@ -6,6 +6,7 @@ pipeline {
     nodejs 'NodeJS'
   }
   environment {
+    PATH = "/usr/local/bin:${env.PATH}"
     REGISTRY = 'pabloher95'
     IMAGE_NAME = 'ecommerce-product-service'
   }
