@@ -6,24 +6,33 @@ REST API to manage product inventory for the e-commerce.
 
 ## Prerequisites
 
-Node
-PostgreSQL
+- Node.js 18+
+- npm 9+
+- PostgreSQL 14+
+- Docker
 
 ## Deployment
 
 clone repo: `git@github.com:pabloher95/ecommerce_products.git`
 
-### local
+### local deployment
 
-- deploy service
+- intialize npm configs: `npm install`
 
-### Docker container
+### containerized deployment
 
 - build container from image
 
 ## Environment setup
 
 Use env.example to configure environment variables, making sure to change default values to desired custom configuration
+
+## API endpoints
+
+GET `/products`: list all products
+GET `/products/:id`: get product by ID
+POST `/products/`: create products
+
 
 ## Contributions
 
