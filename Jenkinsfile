@@ -2,6 +2,9 @@
 
 pipeline {
   agent any
+  tools {
+    nodejs 'NodeJS'
+  }
   environment {
     REGISTRY = 'pabloher95'
     IMAGE_NAME = 'ecommerce-product-service'
